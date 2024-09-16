@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Food House</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar Design Start-->
+        <div class="navbar bg-base-100 w-full bg-green-200 rounded-md">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-green-100 rounded-box z-[1] mt-1 w-52 p-2 shadow">
+                        <li>
+                            <button 
+                                onclick="loadData('Potato')" 
+                                id="btnPotato"
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-red-400">
+                                Potato
+                            </button>
+                        </li>
+                        <li>
+                            <button 
+                                onclick="loadData('Soup')"
+                                id="btnSoup" 
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-yellow-300">
+                                Soup
+                            </button>
+                        </li>
+                        <li>
+                            <button 
+                                onclick="loadData('Chicken')"
+                                id="btnChicken" 
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-orange-300">
+                                Chicken
+                            </button>
+                        </li>
+                        <li>
+                            <button 
+                                onclick="loadData('Beef')"
+                                id="btnBeef" 
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-amber-200">
+                                Beef
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <img src="Resources/burger-icon.webp" alt="Burger" class="w-24">
+                <a class="btn btn-ghost text-4xl">Food House</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-5">
+
+                    <li>
+                        <button
+                            onclick="loadData('Potato')" 
+                            id="btnPotato1" 
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  bg-red-200"> 
+                            Potato 
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            onclick="loadData('Soup')"
+                            id="btnSoup1" 
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-yellow-200"> 
+                            Soup 
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            onclick="loadData('Chicken')"
+                            id="btnChicken1" 
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-orange-300"> 
+                            Chicken 
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            onclick="loadData('Beef')"
+                            id="btnBeef1" 
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-amber-200"> 
+                            Beef 
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="navbar-end">
+                <a class="btn">Button</a>
+            </div> -->
+        </div>
+        <!-- Navbar Design End-->
+
+        <!-- Carousel Design Start-->
+
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+
+                <div class="hero"
+                    style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">
+                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            </p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img
+                src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                class="w-full" /> -->
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+
+
+                <div class="hero"
+                    style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">
+                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            </p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full" /> -->
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+
+                <div class="hero"
+                    style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">
+                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            </p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" /> -->
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+
+                <div class="hero"
+                    style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">
+                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            </p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" /> -->
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Design End-->
+    </header>
+    <main class="container mx-auto">
+
+        <!-- Grid Section Start -->
+         <section>
+            <div id="resultContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            
+              </div>
+         </section>
+
+        <!-- Grid Section End -->
+
+    </main>
+    <script src="js/food.js"></script>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
