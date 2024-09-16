@@ -29,6 +29,9 @@ const loadData = (inputText)  => {
              <p title="${meal.strInstructions}" class="text-justify" > 
                 <span class= "font-bold" > Description: </span> ${meal.strInstructions.slice(0, 150)}...
              </p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary"> Add to Cart </button>
+            </div>
             
          </div>
         `;
