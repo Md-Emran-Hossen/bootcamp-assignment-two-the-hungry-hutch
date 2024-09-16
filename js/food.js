@@ -23,11 +23,11 @@ const loadData = (inputText)  => {
              <img src= ${meal.strMealThumb} alt= "Image of ${meal.strMeal}" class="rounded-xl" />
          </figure>
          <div class="card-body items-center text-center">
-             <h2 class="card-title"> 
+             <h2 class="card-title text-justify"> 
                   Food Name: ${meal.strMeal}!
              </h2>
-             <p title="${meal.strInstructions}" > 
-                 Description: ${meal.strInstructions.slice(0, 150)}...
+             <p title="${meal.strInstructions}" class="text-justify" > 
+                <span class= "font-bold" > Description: </span> ${meal.strInstructions.slice(0, 150)}...
              </p>
             
          </div>
