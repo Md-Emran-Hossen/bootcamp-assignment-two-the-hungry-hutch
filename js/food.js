@@ -1,3 +1,7 @@
+
+ 
+
+
 const loadData = (inputText)  => {
 
     // const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=potato`;
@@ -7,16 +11,16 @@ const loadData = (inputText)  => {
      .then(data => showMeals(data.meals))
      .catch(error => console.log("Error:", error))
  }
- 
- loadData();
- 
+
+ loadData(" ");
  const showMeals = (meals) => {
    
      let container = document.getElementById("resultContainer");
      container.innerHTML = '';
      meals.forEach(meal => {
          let mealCard = document.createElement('div');
-         mealCard.classList = 'card bg-base-100 shadow-xl';
+        //  mealCard.classList = 'card bg-base-100 shadow-xl';
+        mealCard.classList= 'card transition duration-300 ease-in-out hover:scale-110'
  
          mealCard.innerHTML = `
          <figure class="px-5 pt-5">
